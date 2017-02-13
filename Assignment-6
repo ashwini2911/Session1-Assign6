@@ -1,0 +1,53 @@
+Q1) Write a java code with the class named ‘acad’ and a method ‘main’. Hardcode the program
+with two integers and print the sum of those two.
+Q2) Rewrite the above code, where, inputs are provided by the user at runtime and the output
+is printed.
+Q3) Write a program with method name sum() that accepts two parameters from user and print
+the sum two numbers. Output format should be as:
+
+Ans-1
+import java.util.*;
+public class acad {
+public static void main(String args[])
+{
+	int a=4,b=5,c;
+	c=a+b;
+	System.out.println(c);
+}
+}
+
+Ans-2
+import java.util.*;
+public class acad {
+public static void main(String args[])
+{
+	int a,b,c;
+	Scanner sc=new Scanner(System.in);
+	a=sc.nextInt();
+	b=sc.nextInt();
+	c=a+b;
+	System.out.println(c);
+}
+}
+
+Ans-3
+import java.util.*;
+public class acad {
+public static void main(String args[])
+{
+	int a,b,c;
+	Scanner sc=new Scanner(System.in);
+	a=sc.nextInt();
+	b=sc.nextInt();
+	c=sum(a,b);
+	System.out.println(c);
+}
+
+private static int sum(int a, int b) {
+	int c=0;
+	c=a+b;
+	return c;
+}
+
+}
+
